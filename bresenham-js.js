@@ -11,18 +11,18 @@
 
 		var result = [];
 		var current = pos1.slice();
-		for (var i = 0; i < absDelta[maxIndex]; i++)
+		for (var j = 0; j < absDelta[maxIndex]; j++)
 		{
 			result.push(current.slice());
-			error.forEach(function(errorValue, index)
+			for (var i = 0; i < error.length; i++)
 			{
-				if (error[index] > 0)
+				if (error[i] > 0)
 				{
-					current[index] += increment[index];
-					error[index] -= absDelta2[maxIndex];
+					current[i] += increment[i];
+					error[i] -= absDelta2[maxIndex];
 				}
-				error[index] += absDelta2[index];
-			});
+				error[i] += absDelta2[i];
+			}
 		}
 		result.push(current.slice());
 		return result;
