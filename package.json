@@ -1,0 +1,24 @@
+{
+	"name": "bresenham-js",
+	"version": "0.0.0",
+	"description": "Bresenham's line algorithm in n-dimensional space.",
+	"main": "bresenham-js.js",
+	"repository":
+	{
+		"type": "git",
+		"url": "git://github.com/thejonwithnoh/bresenham-js.git"
+	},
+	"keywords":
+	[
+		"bresenham",
+		"line",
+		"multidimensional"
+	],
+	"author": "Jonathan Faulch",
+	"license": "MIT",
+	"bugs":
+	{
+		"url": "https://github.com/thejonwithnoh/bresenham-js/issues"
+	},
+	"homepage": "https://github.com/thejonwithnoh/bresenham-js#readme"
+}
